@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="resep.html">Resep</a> |
+  <a href="frozenfood.html">Frozen Food</a> |
+  <a href="kontak.html">Kontak</a>
+</nav>
+<body>
+  <center><h2>Silahkan Login</h2></center>
+  <div class="login">
+    <form action="#" method="POST" onSubmit="validasi()">
+      <div>
+        <label>Username:</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <input type="submit" value="Sign In" class="tombol">
+      </div>
+    </form>
+  </div>
+</body>
+<script type="text/javascript">
+  function validasi() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if (username !="" && password !="") {
+      return true;
+    }
+    else{
+      alert("Jika Anda belum Terdaftar, Silahkan Sign Up terlebih dahulu")
+    }
+  }
+</script>
+</html>
